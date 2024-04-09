@@ -2,7 +2,7 @@
 FROM golang:1.19 as build
 MAINTAINER yogesh.chouk@temporal.io
 RUN apt-get update && apt-get install -y git
-RUN git clone https://github.com/yogeshtemporal/sample_hello_activity.git
+RUN git clone https://github.com/yogeshtemporal/simple_cloud_wf.git
 
 ARG API_KEY
 ARG NAMESPACE
