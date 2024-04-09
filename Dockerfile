@@ -51,4 +51,5 @@ COPY --from=build /yogesh-gradle-app/app/src/main/resources /yogesh-gradle-app/a
 
 COPY app/build/libs/app-all.jar app-all.jar
 
-ENTRYPOINT ["java","-jar","app-all.jar"]%                                                                         
+ENTRYPOINT ["java","-jar","app-all.jar"]%     
+EXPOSE 8078                                                                    
