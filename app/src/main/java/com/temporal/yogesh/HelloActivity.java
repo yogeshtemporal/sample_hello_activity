@@ -212,8 +212,8 @@ public class HelloActivity {
             .setNamespace(sslContextBuilderProvider.getNamespace())
             .setExecution(WorkflowExecution.newBuilder().setWorkflowId(workflowId))
             .build();
-    DescribeWorkflowExecutionResponse response = stub.describeWorkflowExecution(request);
-    System.out.println(response.getWorkflowExecutionInfo().getStatus());
+    // DescribeWorkflowExecutionResponse response = stub.describeWorkflowExecution(request);
+    // System.out.println(response.getWorkflowExecutionInfo().getStatus());
 
     WorkflowClientOptions clientOptions =
         WorkflowClientOptions.newBuilder()
